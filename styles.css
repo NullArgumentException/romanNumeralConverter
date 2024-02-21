@@ -1,0 +1,116 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+:root {
+  --beige: #e1d2bd;
+  --brown: #b49176;
+  --darkolive: #2d291d;
+  --gray: #b0b1b5;
+  --gold: #d4af37;
+  --lightred: #ffdada;
+  --crimson: #dc143c;
+}
+
+body {
+  background-color: var(--beige);
+  color: var(--darkolive);
+  font-family: "Times New Roman", Times, serif;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin: 2rem;
+  text-align: center;
+  filter: drop-shadow(2px 4px 4px hsl(0deg 0% 0% / 0.4));
+}
+
+#input-container,
+#output,
+#number,
+#convert-btn {
+  border-radius: 10px;
+}
+
+#input-container,
+#output {
+  background-color: var(--brown);
+  border: 4px solid var(--gold);
+  box-shadow: 5px 10px 10px hsl(0deg 0% 0% / 0.4);
+  max-width: 500px;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  padding: 2rem;
+}
+
+#number-label,
+#output {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+#number-label {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+#number,
+#convert-btn {
+  background-color: var(--gray);
+  border: 2px solid var(--gold);
+  box-shadow: 2.5px 5px 5px hsl(0deg 0% 0% / 0.42);
+  font-size: 1.5rem;
+  font-weight: 600;
+  height: 2.5rem;
+  width: 100%;
+}
+
+#number {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+}
+
+#number:focus {
+  border: 2px solid var(--beige);
+  outline: none;
+}
+
+#convert-btn {
+  display: block;
+  background-image: linear-gradient(#d8d8da, var(--gray));
+}
+
+#convert-btn:hover {
+  background-image: linear-gradient(var(--gray), #d8d8da);
+  border: 2px solid var(--beige);
+}
+
+#output {
+  display: none;
+}
